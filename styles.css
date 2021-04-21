@@ -1,0 +1,269 @@
+:root{
+    --vd-blue: hsl(233, 47%, 7%);                       /* MAIN BACKGROUND */
+    --d-desac-blue: hsl(244, 38%, 16%);                 /* CARD BACKGROUND */
+    --soft-violet: hsl(277, 64%, 61%);                  /* ACCENT */
+    --white: hsl(0, 0%, 100%);
+    --sli-trans-white: hsla(0, 0%, 100%, 0.75);          /* MAIN PARA */
+    --sli-more-trans-white: hsla(0, 0%, 100%, 0.6);      /* STAT DETAIL */
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--vd-blue);
+    font-size: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    background-color: var(--d-desac-blue);
+    height: 23rem;
+    width: 78%;
+    display: flex;
+    border-radius: 0.5rem;
+}
+
+
+#left{
+    margin: 4rem;
+    margin-bottom: 0;
+    width: 40%;
+    height: 65%;
+}
+
+#leftWrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading, .number{
+    color: var(--white);
+}
+
+
+.heading{
+    font-size: 2rem;
+    margin: 0 0 1rem 0 ;
+}
+
+.accent{
+    color: var(--soft-violet);
+}
+
+.para{
+    color: var(--sli-trans-white);
+}
+
+.para, .statistics{
+    width: 89%;
+
+}
+
+.para, .statDetail{
+    font-size: 0.8rem;
+}
+
+.statistics{
+    display: flex;
+    justify-content: space-between;
+}
+
+.number{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.statDetail{
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    color: var(--sli-more-trans-white);
+}
+
+#right{
+    background-color: var(--soft-violet);
+    width: 50%;
+    overflow: hidden;
+}
+
+#right img{
+    width: 100%;
+    opacity: 0.5;
+}
+
+#right, #right img{
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.mobImage{
+    display: none;
+}
+
+.attribution { 
+    margin-top: 2rem;
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--white);
+}
+
+.attribution a { 
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--soft-violet); 
+}
+
+
+@media screen and (max-width: 1040px){
+    main{
+        height: 18.5rem;
+    }
+
+    #left{
+        margin: 3rem;
+    }
+
+    .heading{
+        font-size: 1.7rem;
+    }
+
+    .para, .statDetail{
+        font-size: 0.7rem;
+    }
+
+    .number{
+        font-size: 1.1rem;
+    }
+}
+
+
+@media screen and (max-width: 930px){
+    main{
+        height: 17rem;
+    }
+
+    #left{
+        margin: 2.5rem;
+    }
+
+    #leftWrapper{
+        height: 110%;
+    }
+
+    .heading{
+        font-size: 1.4rem;
+    }
+
+    .para, .statDetail{
+        font-size: 0.6rem;
+    }
+
+    .number{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    main{
+        height: 14rem;
+    }
+
+    #left{
+        margin: 2rem;
+    }
+
+    .heading{
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    main{
+        height: 12.5rem;
+    }
+
+    .heading{
+        font-size: 1rem;
+    }
+
+    .para, .statDetail{
+        font-size: 0.5rem;
+    }
+
+    .number{
+        font-size: 0.85rem;
+        margin-bottom: 0;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    main{
+        flex-direction: column-reverse;
+        height: auto;
+        width: 15rem;
+    }
+
+    #left, #right{
+        width: 100%;
+    }
+
+    #left{
+        margin: 1rem auto;
+        text-align: center;
+        /* background-color: red; */
+        margin: 0.5rem auto;
+
+    }
+
+    #leftWrapper{
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    #right{
+        height: 12rem;
+    }
+
+    #right, #right img{
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .heading{
+        font-size: 1.2rem;
+        width: 80%;
+        margin: 0.5rem auto;
+    }
+
+    .para{
+        margin: auto;
+        width: 80%;
+    }
+
+    .para, .statDetail{
+        font-size: 0.7rem;
+    }
+
+    .statistics{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .stat{
+        margin-bottom: 0.5rem;
+    }
+
+    .deskImage{
+        display: none;
+    }
+
+    .mobImage{
+        display: block;
+    }
+}
