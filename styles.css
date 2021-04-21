@@ -219,7 +219,7 @@ main{
         text-align: center;
         /* background-color: red; */
         margin: 0.5rem auto;
-
+        height: 19rem;
     }
 
     #leftWrapper{
@@ -228,7 +228,7 @@ main{
     }
 
     #right{
-        height: 12rem;
+        height: 11rem;
     }
 
     #right, #right img{
